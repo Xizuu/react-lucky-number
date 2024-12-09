@@ -55,8 +55,8 @@ export default function LuckySlotGame() {
     }, spinInterval);
   };
 
-  const checkResult = (finalResult) => {
-    const same = finalResult.every(num => num === finalResult[0]);
+  const checkResult = (finalResult: string[]) => {
+    const same = finalResult.every((num: string) => num === finalResult[0]);
 
     if (same) {
       setGameOver(true);
